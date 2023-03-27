@@ -28,7 +28,7 @@ export const navLinks = [
   },
   {
     id: "blog",
-    title: "BLOG`",
+    title: "BLOG",
   },
   {
     id: "account",
@@ -53,7 +53,7 @@ export const features = [
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: person_logo,
     title: "People First",
     content:
       "Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.",
