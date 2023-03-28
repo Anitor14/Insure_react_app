@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  bg_pattern_intro_left_mobile,
+  bg_pattern_mobile_nav,
   close,
   hamburger,
   insure_logo,
@@ -37,6 +37,37 @@ const Navbar = () => {
           className={`w-[32px] h-[32px] object-contain`}
           onClick={() => setToggle((prev) => !prev)}
         />
+        <div
+          className={`${
+            toggle ? "flex" : "hidden"
+          } bg-veryDarkViolet w-screen h-screen absolute top-20 right-0  overflow-hidden`}
+        >
+          <ul className="list-none flex flex-col justify-start items-center py-[40px] flex-1">
+            {navLinks.map((nav, index) => {
+              return (
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-[400] cursor-pointer text-[25px] text-veryLightGray mb-10 `}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              );
+            })}
+            <button
+              type="button"
+              className={`px-[100px] py-[10px] max-w-[100%] bg-veryDarkViolet hover:bg-veryLightGray font-poppins  text-[25px] text-veryLightGray hover:text-veryDarkViolet font- border-solid border-2 border-veryLightGray active:cursor-progress ease-in-out duration-300`}
+            >
+              View Plans
+            </button>
+            <div className="flex justify-center items-center border-2 border-veryLightGray">
+              <img
+                src={bg_pattern_mobile_nav}
+                alt="bg_patter_intro_left_mobile"
+                className={`w-[100%] h-[100%] object-contain absolute bottom-[-40%]`}
+              />
+            </div>
+          </ul>
+        </div>
       </div>
     </nav>
   );
