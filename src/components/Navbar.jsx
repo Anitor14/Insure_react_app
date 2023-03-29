@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-7 justify-between items-center">
       <img src={insure_logo} alt="nav-logo" />
-      <div className="sm:flex hidden justify-between items-center gap-[25px]">
+      <div className="sm:flex hidden justify-between items-center gap-[25px] px-5 flex-1">
         <ul className="list-none flex justify-end items-center flex-1 leading-[20px]">
           {navLinks.map((nav, index) => {
             return (
@@ -62,7 +62,7 @@ const Navbar = () => {
             <div className="flex justify-center items-center border-2 border-veryLightGray">
               <img
                 src={bg_pattern_mobile_nav}
-                alt="bg_patter_intro_left_mobile"
+                alt="bg_pattern_mobile_nav"
                 className={`w-[100%] h-[100%] object-contain absolute bottom-[-40%]`}
               />
             </div>
