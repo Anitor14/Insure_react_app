@@ -16,7 +16,7 @@ const Hero = () => {
         className={`flex-1 flex justify-center items-center flex-col xl:px-0 sm:px-16 px-6 max-w-[700px] text-center sm:text-left py-[90px]`}
       >
         <h1
-          className={`font-poppins font-[700] text-[60px] text-veryLightGray`}
+          className={`font-poppins font-[700] text-[55px] text-veryLightGray text-left`}
         >
           Humanizing your insurance.
         </h1>
