@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar, Hero, Features, Work } from "./components";
+import { Navbar, Hero, Features, Work, Footer } from "./components";
 
 function App() {
   return (
@@ -16,10 +16,16 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-veryLightGray sm:px-[150px] px-6 md:mt-[280px] mt-[75px] flex justify-center items-start">
+      <div className="bg-white sm:px-[150px] px-6 md:mt-[280px] mt-[75px] flex justify-center items-start">
         <div className="xl:max-w-[1280px] w-full">
           <Features />
           <Work />
+        </div>
+      </div>
+
+      <div className="bg-hsl(0, 0%, 98%) flex justify-center items-center">
+        <div className="xl:max-w-[1280px] w-full">
+          <Footer />
         </div>
       </div>
     </div>

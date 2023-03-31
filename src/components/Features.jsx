@@ -38,6 +38,6 @@ const Features = () => {
       </div>
     </section>
   );
-};
+};  
 
 export default Features;
